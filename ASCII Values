@@ -1,0 +1,10 @@
+/*ASCII(America standard Code for information interchange) Value is  127
+1-9 = 48-57
+A-Z = 65-90
+a-z = 97-120*/
+#include<stdio.h>
+void main(){
+    for(int i=0;i<=127;i++){
+        printf("The value of %c= %d\n",i,i);
+    }
+}
