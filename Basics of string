@@ -1,0 +1,50 @@
+/*STRING :-
+A String in C programming is a sequence of characters terminated with a null character ‘\0’. 
+The C String is stored as an array of characters. 
+*/
+//String Inilization:-
+//char arr[]={'C','O','R','E','2','W','E','B'};
+//char *str="CORE2WEB"
+
+#include<stdio.h>
+void main(){
+    char arr[]={'C','O','R','E','2','W','E','B'};
+    char *str="CORE2WEB";  //This type of string is constant .... It can't be changed
+    //We  can't take input string in this method
+
+    printf("%s\n",arr);
+    printf("%s\n",str);
+    
+    char arr1[10];
+    
+    // printf("Enter String\n");
+    // scanf("%s",arr1);  //It stores only the first word of string means e.g if ur input is ravi raj then it prints ravi only
+    // printf("%s\n",arr1);
+
+    printf("Enter String\n");
+    scanf("%[^\n]s",arr1);  
+    printf("%s\n",arr1) ;
+
+    char name[20];
+    printf("Enter String\n");
+    gets(name);
+    puts(name);
+
+    char pName[]={'R','O','H','I','T','\0'};
+    char *name="Virat";
+    for(int i=0;i<5;i++){
+        printf("%c",pName[i]);
+    }
+    printf("\n");
+    for(int i=0;i<5;i++){
+        printf("%c",name[i]);
+    }
+      printf("\n");
+    char try[]={'R','O','H','I','T','\0','S','P','A','M'};
+    puts(try);
+    for(int i=0;i<10;i++){
+        printf("%c",try[i]);
+    }
+    
+
+}
