@@ -1,0 +1,22 @@
+/*Find series  fact(1) / 1 + fact(2) / 2 + fact(3) / 3 + fact(4) / 4 + fact(5) / 5  using function in c
+
+*/
+#include <stdio.h>
+int fact(int n)
+{
+    int f = 1;
+
+    for (int i = n; i > 0; i--)
+    {
+        f = f * i;
+
+    }
+     return f;
+}
+void main()
+{
+    int sum = fact(1) / 1 + fact(2) / 2 + fact(3) / 3 + fact(4) / 4 + fact(5) / 5;
+    printf("\n\n Function : find the sum of 1!/1+2!/2+3!/3+4!/4+5!/5 :\n");
+    printf("----------------------------------------------------------\n");
+    printf("The sum of the series is : %d\n\n", sum);
+}
